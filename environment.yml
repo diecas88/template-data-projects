@@ -1,5 +1,5 @@
 # conda env create --file environment.yml
-name: cookiecutter-personal-platzi
+name: template-data
 channels:
   - anaconda
   - conda-forge

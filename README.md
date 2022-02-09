@@ -1,11 +1,6 @@
-# Cookiecuter Personal Platzi
+# Personal Template
 
-<!-- badges: start -->
-[![@jvelzmagic](https://img.shields.io/badge/@jvelezmagic-Sitio_personal-blue?&logoColor=white)](https://jvelezmagic.com/) 
-[![Platzi](https://img.shields.io/badge/Curso_Platzi-Configuración_Avanzada_...-green&logoColor=white)](https://platzi.com/datos/)
-<!-- badges: end -->
-
-Aprende a crear tu propia plantilla personalizada utilizando cookiecutter.
+Template personal para usar en proyectos de datos y visualizaciones
 
 ## Requiremientos
 
@@ -29,7 +24,7 @@ conda install -c conda-forge cookiecutter
 En el directorio en el que quieras guardar tu proyecto generado:
 
 ```bash
-cookiecutter https://github.com/platzi/curso-entorno-avanzado-ds --checkout cookiecutter-personal-platzi
+cookiecutter .
 ```
 
 
@@ -37,12 +32,14 @@ cookiecutter https://github.com/platzi/curso-entorno-avanzado-ds --checkout cook
 
     {{ cookiecutter.project_slug }}
         ├── data
+        │   ├── docs           <- documentation folder.
+        │   └── scr            <- resourses folder.
         │   ├── processed      <- The final, canonical data sets for modeling.
         │   └── raw            <- The original, immutable data dump.
         │
         ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
         │                         the creator's initials, and a short `-` delimited description, e.g.
-        │                         `1.0-jvelezmagic-initial-data-exploration`.
+        │                         ``.
         │
         ├── .gitignore         <- Files to ignore by `git`.
         │
@@ -50,5 +47,4 @@ cookiecutter https://github.com/platzi/curso-entorno-avanzado-ds --checkout cook
         │
         └── README.md          <- The top-level README for developers using this project.
 
----
-Proyecto creado con fines demostrativos para el curso "[Configuración avanzada...]()" de [Platzi](https://platzi.com/) por [@jvelezmagic](https://twitter.com/jvelezmagic).
+
